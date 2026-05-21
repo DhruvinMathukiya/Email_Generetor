@@ -26,6 +26,7 @@ def get_person_details():
     communication_style = input("Communication Style : ")
     personality_traits = input("Personality Traits  : ")
 
+
     return {
         "full_name": full_name,
         "job_title": job_title,

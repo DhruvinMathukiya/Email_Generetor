@@ -9,6 +9,7 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
+
 if not GOOGLE_API_KEY:
     raise ValueError(" GOOGLE_API_KEY not found in .env")
 else:
