@@ -356,9 +356,8 @@ def print_showcase_summary():
         print("   No previous showcase entries found.")
         return
 
-    print(f"\n{'═'*60}")
     print(f"   SHOWCASE LOG — {len(log)} customer(s) served so far")
-    print(f"{'═'*60}")
+    
     for i, entry in enumerate(log, 1):
         print(f"\n  Customer #{i}")
         print(f"  ├─ Name       : {entry.get('sender_name', 'N/A')}")
@@ -392,11 +391,8 @@ def run_email_generator(person_context_str: str) -> int:
         result = chain.invoke(email_details)
         count += 1
 
-        print(f"\n{'─'*60}")
         print(f" GENERATED EMAIL  (#{count} this session)")
-        print("─" * 60)
         print(result)
-        print("─" * 60)
 
     return count
 
