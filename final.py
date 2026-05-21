@@ -378,7 +378,7 @@ def run_email_generator(person_context_str: str) -> int:
         choice = input("Generate a new email? (yes/exit): ").strip().lower()
 
         if choice in ["exit", "quit", "no"]:
-            print("\n👋 Done with email generation.")
+            print("\n Done with email generation.")
             break
 
         if choice != "yes":
